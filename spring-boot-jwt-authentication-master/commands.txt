@@ -1,0 +1,4 @@
+keytool -genkey -alias jwtsigning -keyalg RSA -keystore keystore.jks  -keysize 2048
+Authorization: Bearer <jwt_token>
+
+ jwt.io:
