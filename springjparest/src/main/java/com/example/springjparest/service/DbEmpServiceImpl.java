@@ -3,6 +3,7 @@ package com.example.springjparest.service;
 import com.example.springjparest.entity.Emp;
 import com.example.springjparest.model.EmpDto;
 import com.example.springjparest.repository.EmpRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,10 +12,11 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
+@RequiredArgsConstructor
 public class DbEmpServiceImpl implements EmpService {
 
-    @Autowired
-    private EmpRepository empRepository;
+
+    private final EmpRepository empRepository;
 
     @Override
     public List<EmpDto> getAllEmps() {
