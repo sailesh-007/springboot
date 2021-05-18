@@ -5,6 +5,19 @@ public class EmpDto {
     String firstName;
     String lastName;
     Double salary;
+
+    @Override
+    public String toString() {
+        return "EmpDto{" +
+                "empId=" + empId +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", salary=" + salary +
+                ", age=" + age +
+                ", title='" + title + '\'' +
+                '}';
+    }
+
     Integer age;
     String title;
 
